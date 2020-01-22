@@ -15,11 +15,7 @@ import createRootReducer from 'reducers'
 import Layout from 'containers/layout'
 
 const history = createBrowserHistory()
-//////////
-// const location = history.location;
-// console.log(history.location)
-// console.log(window.locatin)
-//////
+
 const middlewares = [thunk, routerMiddleware(history)]
 const store = createStore(
   createRootReducer(history),
